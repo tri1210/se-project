@@ -1,0 +1,190 @@
+// turn off bootstrap scroll behavior
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: inherit;
+  }
+}
+.scroll {
+  scroll-behavior: smooth;
+}
+
+// Selection bg and color
+::selection {
+  color: $color-light;
+  background: $color-primary;
+}
+
+a {
+  text-decoration: none;
+  color: $color-dark;
+  transition: 0.3s;
+  &:hover {
+    color: $color-primary;
+  }
+}
+body {
+  box-sizing: border-box;
+}
+
+.section-wrapper {
+  overflow-x: hidden;
+}
+
+// Backgrounds
+.section-bg {
+  background-color: $color-tertiary;
+}
+// Section paddings
+.section-padding {
+  padding: 80px 0;
+}
+
+.footer-padding {
+  padding: 60px 0;
+}
+
+.footer-padding-t {
+  padding-top: 60px;
+}
+
+// section title
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+  text-transform: capitalize;
+  h1 {
+    font-size: 2.5rem;
+    @include media-breakpoint-down(md) {
+      font-size: 35px;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: 30px;
+    }
+  }
+  &.left {
+    text-align: left;
+    padding-bottom: 20px;
+    @include media-breakpoint-down(sm) {
+      padding-bottom: 0;
+    }
+  }
+  &.right {
+    text-align: right;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+// Button
+.button-primary {
+  background-color: $color-primary;
+  color: $color-light;
+  border: none;
+  padding: 15px 15px;
+  transition: all 0.5s;
+  font-weight: 500;
+  &:hover {
+    background-color: $color-secondary;
+    color: $color-light;
+  }
+}
+
+.swiper-pagination {
+  .swiper-pagination-bullet {
+    background-color: $color-primary;
+    transition: 0.4s;
+    padding: 5px;
+    &.swiper-pagination-bullet-active {
+      width: 30px;
+      border-radius: 5px;
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  li {
+    a {
+      cursor: pointer;
+      width: 35px;
+      height: 35px;
+      background-color: $color-primary;
+      border-radius: 50%;
+      color: $color-light;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.error {
+  color: $color-danger;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.inner-page {
+  background-color: $color-tertiary;
+  text-align: center;
+  text-transform: capitalize;
+  color: $color-dark;
+  h3 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    @include media-breakpoint-down(md) {
+      font-size: 35px;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: 30px;
+    }
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    li {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      color: $color-primary;
+      font-size: 18px;
+      font-weight: 500;
+      @include media-breakpoint-down(md) {
+        font-size: 16px;
+      }
+      a {
+        color: $color-dark;
+        transition: all 0.5s;
+        &:hover {
+          color: $color-primary;
+        }
+      }
+    }
+  }
+}
+
+.loader {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .react-loading-skeleton {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+}

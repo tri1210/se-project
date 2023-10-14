@@ -1,0 +1,119 @@
+.featured-list {
+  .nav-tabs {
+    border: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    .nav-link {
+      border: none;
+      color: $color-dark;
+      border-radius: 18px;
+      font-size: 14px;
+      padding: 7px 25px;
+      background-color: $color-tertiary;
+      transition: all 0.5s;
+      font-weight: 600;
+      &:hover {
+        color: $color-primary;
+      }
+      &.active {
+        background-color: $color-primary;
+        color: $color-light;
+        &:hover {
+          color: $color-light;
+        }
+      }
+    }
+  }
+  &__item {
+    border-radius: 5px;
+    box-shadow: 2px 0px 15px 5px $color-shadow;
+    &--image {
+      position: relative;
+      img {
+        border-radius: 5px 5px 0 0;
+      }
+      .popular {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        padding: 3px 8px;
+        border-radius: 5px;
+        background-color: $color-primary;
+        color: $color-light;
+        text-transform: capitalize;
+        @include media-breakpoint-down(sm) {
+          font-size: 14px;
+        }
+      }
+      .price {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        padding: 3px 8px;
+        border-radius: 5px;
+        background-color: $color-primary;
+        color: $color-light;
+        @include media-breakpoint-down(sm) {
+          font-size: 14px;
+        }
+      }
+    }
+    &__info {
+      padding: 15px;
+      h3 {
+        font-size: 25px;
+        padding-bottom: 5px;
+        @include media-breakpoint-down(md) {
+          font-size: 22px;
+        }
+        @include media-breakpoint-down(sm) {
+          font-size: 20px;
+        }
+      }
+      &--ratting {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        margin-bottom: 10px;
+        span {
+          background-color: $color-primary;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          border-radius: 5px;
+          padding: 5px 8px;
+          color: $color-light;
+          line-height: 1;
+        }
+      }
+      &--list {
+        li {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          padding-bottom: 8px;
+          @include media-breakpoint-down(md) {
+            padding-bottom: 5px;
+          }
+        }
+      }
+      &--expert {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 15px;
+        background-color: $color-tertiary;
+        padding: 10px 15px;
+        border-radius: 5px;
+        li {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+        }
+      }
+    }
+  }
+}

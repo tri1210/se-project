@@ -1,0 +1,94 @@
+{
+  "kind": "collectionType",
+  "collectionName": "properties",
+  "info": {
+    "singularName": "property",
+    "pluralName": "properties",
+    "displayName": "property",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "price": {
+      "type": "biginteger",
+      "required": true
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "phone": {
+      "type": "string",
+      "required": true
+    },
+    "beds": {
+      "type": "biginteger"
+    },
+    "baths": {
+      "type": "biginteger"
+    },
+    "type": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "decimal"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "properties"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "mappedBy": "properties"
+    },
+    "propertyType": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "popular",
+        "featured"
+      ],
+      "default": "none"
+    },
+    "propertyFeature": {
+      "displayName": "propertyFeature",
+      "type": "component",
+      "repeatable": true,
+      "component": "property-feature.property-feature"
+    },
+    "date": {
+      "type": "date"
+    }
+  }
+}

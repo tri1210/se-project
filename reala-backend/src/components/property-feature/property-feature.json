@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_property_feature_property_features",
+  "info": {
+    "displayName": "propertyFeature",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "feature": {
+      "type": "string"
+    }
+  }
+}

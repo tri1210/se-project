@@ -1,0 +1,117 @@
+.footer {
+  background-color: $color-dark;
+  &__top {
+    width: 600px;
+    text-align: center;
+    h3 {
+      color: $color-light;
+      margin-bottom: 20px;
+    }
+    form {
+      .footer__subscribe {
+        display: flex;
+        gap: 7px;
+        align-items: center;
+        @include media-breakpoint-down(sm) {
+          display: block;
+        }
+        input {
+          width: 450px;
+          padding: 15px 15px;
+          border: none;
+          @include media-breakpoint-down(sm) {
+            width: 100%;
+            margin-bottom: 15px;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+        button {
+          @include media-breakpoint-down(sm) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  &__social {
+    h3 {
+      color: $color-light;
+      margin-bottom: 30px;
+    }
+    p {
+      color: $color-light;
+      margin-bottom: 15px;
+    }
+    ul {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      li {
+        a {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: $color-primary;
+          color: $color-light;
+          transition: all 0.5s;
+          svg {
+            font-size: 22px;
+          }
+        }
+        &:hover {
+          a {
+            background-color: $color-secondary;
+          }
+        }
+      }
+    }
+  }
+  &__logo {
+    h1 {
+      color: $color-light;
+      margin-bottom: 30px;
+    }
+  }
+  &__content {
+    h3 {
+      color: $color-light;
+      margin-bottom: 30px;
+    }
+    ul {
+      li {
+        display: flex;
+        gap: 15px;
+        color: $color-light;
+        align-items: center;
+        &:not(:last-child) {
+          margin-bottom: 15px;
+        }
+        a {
+          color: $color-light;
+          &:hover {
+            color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+  &__copyright {
+    padding: 20px 0;
+    border-top: 1px solid $color-tertiary;
+    p {
+      color: $color-light;
+      gap: 10px;
+      a {
+        color: $color-light;
+        &:hover {
+          color: $color-primary;
+        }
+      }
+    }
+  }
+}

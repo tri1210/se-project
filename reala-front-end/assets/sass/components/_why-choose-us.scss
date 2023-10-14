@@ -1,0 +1,40 @@
+.wChoose {
+  &__intro {
+    padding: 1rem;
+    img {
+        border-radius: 5px;
+        margin-top: 14px;
+    }
+  }
+  &__content {
+    padding: 1rem 1rem 1rem 4rem;
+    @include media-breakpoint-down(xxl) {
+      padding: 15px;
+    }
+    &__item {
+      text-align: center;
+      padding: 20px;
+      background-color: $color-light;
+      border-radius: 5px;
+      @include media-breakpoint-down(xxl) {
+        padding: 15px;
+      }
+      @include media-breakpoint-down(xl) {
+        padding: 15px 10px;
+      }
+      .icon {
+        font-size: 45px;
+        color: $color-primary;
+        margin-bottom: 15px;
+        line-height: 0;
+      }
+      h3 {
+        font-size: 25px;
+        padding-bottom: 15px;
+      }
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

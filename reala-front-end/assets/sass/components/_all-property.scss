@@ -1,0 +1,163 @@
+.all-property {
+  .property-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    @include media-breakpoint-down(sm) {
+      display: block;
+    }
+    p {
+      margin-bottom: 0;
+    }
+    &__view {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 20px;
+        justify-content: center;
+      }
+      .sort-btn {
+        border: 1px solid $color-border;
+        background-color: $color-light;
+        border-radius: 5px;
+        svg {
+          color: $color-dark;
+        }
+        &:focus {
+          outline: none;
+        }
+        &.active {
+          border: 1px solid $color-primary;
+          svg {
+            color: $color-primary;
+          }
+        }
+      }
+    }
+    form {
+      width: 250px;
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+      }
+      input {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid $color-border;
+        font-size: 16px;
+        transition: all 0.5s;
+        &:hover,
+        &:focus {
+          outline: none;
+          border: 1px solid $color-primary;
+        }
+      }
+    }
+  }
+  .list-view {
+    &--image {
+      position: relative;
+      img {
+        border-radius: 5px;
+        height: 235px;
+        object-fit: cover;
+        width: 100%;
+      }
+      .popular {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        padding: 3px 8px;
+        border-radius: 5px;
+        background-color: $color-primary;
+        color: $color-light;
+        text-transform: capitalize;
+        @include media-breakpoint-down(sm) {
+          font-size: 14px;
+        }
+      }
+      .type {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        padding: 3px 8px;
+        border-radius: 5px;
+        background-color: $color-primary;
+        color: $color-light;
+        @include media-breakpoint-down(sm) {
+          font-size: 14px;
+        }
+      }
+    }
+    &__info {
+      @include media-breakpoint-down(md) {
+        padding-top: 20px;
+      }
+      &--title {
+        h3 {
+          font-size: 25px;
+          padding-bottom: 5px;
+          @include media-breakpoint-down(md) {
+            font-size: 22px;
+          }
+          @include media-breakpoint-down(sm) {
+            font-size: 20px;
+          }
+        }
+      }
+      &--price {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        @include media-breakpoint-down(md) {
+          margin-bottom: 10px;
+        }
+      }
+      &--ratting {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        margin-bottom: 10px;
+        span {
+          background-color: $color-primary;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          border-radius: 5px;
+          padding: 5px 8px;
+          color: $color-light;
+          line-height: 1;
+        }
+      }
+      &--list {
+        li {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          padding-bottom: 8px;
+          @include media-breakpoint-down(md) {
+            padding-bottom: 5px;
+          }
+        }
+      }
+      &--expert {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 15px;
+        background-color: $color-tertiary;
+        padding: 10px 15px;
+        border-radius: 5px;
+        justify-content: space-between;
+        li {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+        }
+      }
+    }
+  }
+}

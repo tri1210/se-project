@@ -1,0 +1,14 @@
+@keyframes stickyMenu {
+  0% {
+    margin-top: -50px;
+    opacity: 0;
+  }
+  50% {
+    margin-top: -64px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}

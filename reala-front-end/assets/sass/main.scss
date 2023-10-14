@@ -1,0 +1,19 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "./abstracts/animations";
+@import "./abstracts/variables";
+
+@import "./base/typography";
+@import "./base/base";
+
+@import "./components/header";
+@import "./components/hero";
+@import "./components/featured-listing";
+@import "./components/why-choose-us";
+@import "./components/testimonial";
+@import "./components/footer";
+
+@import "./components/contact";
+@import "./components/all-property";
+@import "./components/single-page";
+@import "./components/blog";

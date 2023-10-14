@@ -1,0 +1,56 @@
+.contact {
+  &__header {
+    text-align: center;
+    p {
+      text-transform: uppercase;
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 0px;
+    }
+  }
+  &__info {
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid $color-border;
+    margin-bottom: 20px;
+    p {
+      margin-bottom: 0;
+    }
+    h4 {
+      font-size: 18px;
+    }
+  }
+  form {
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid $color-border;
+    @include media-breakpoint-down(sm) {
+      padding: 15px;
+    }
+    label {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px 15px;
+      border-radius: 5px;
+      border: 1px solid $color-border;
+      outline: none;
+      transition: all 0.5s;
+      &:focus,
+      &:hover {
+        outline: none;
+        border: 1px solid $color-primary;
+      }
+    }
+    .input {
+      margin-bottom: 15px;
+    }
+    button {
+      width: 100%;
+    }
+  }
+}
