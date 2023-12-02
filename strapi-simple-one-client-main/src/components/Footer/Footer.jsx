@@ -35,12 +35,12 @@ const Footer = () => {
                 </div>
                 <div className="col">
                     <div className="title">Categories</div>
-                    <span className="text">Headphones</span>
-                    <span className="text">Smart Watches</span>
-                    <span className="text">Bluetooth Speakers</span>
-                    <span className="text">Wireless Earbuds</span>
-                    <span className="text">Home Theatre</span>
-                    <span className="text">Projectors</span>
+                    <span className="text">TCG Pokemon</span>
+                    <span className="text">TCG Yugioh</span>
+                    <span className="text">TCG Disney</span>
+                    <span className="text">Figures</span>
+                    <span className="text">Mouse Paddings</span>
+                    <span className="text">Keycaps</span>
                 </div>
                 <div className="col">
                     <div className="title">Pages</div>

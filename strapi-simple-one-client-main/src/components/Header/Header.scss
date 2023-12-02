@@ -4,8 +4,8 @@
     width: 100%;
     padding: 0 20px;
     z-index: 99;
-    background-color: #212121;
-    color: white;
+    background-color: #ff41d6;
+    color: rgb(0, 0, 0);
     border-bottom: 1px solid;
     border-color: rgba(0, 0, 0, 0.1);
     @include md {
@@ -16,7 +16,7 @@
         justify-content: space-between;
         align-items: center;
         height: 50px;
-        max-width: 1200px;
+        max-width: 1700px;
         margin: 0 auto;
         @include md {
             height: 80px;

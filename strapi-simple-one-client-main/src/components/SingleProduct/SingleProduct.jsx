@@ -46,7 +46,7 @@ const SingleProduct = () => {
                     </div>
                     <div className="right">
                         <span className="name">{product.title}</span>
-                        <span className="price">&#8377;{product.price}</span>
+                        <span className="price">&#x24;{product.price}</span>
                         <span className="desc">{product.description}</span>
 
                         <div className="cart-buttons">

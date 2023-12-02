@@ -2,9 +2,9 @@
 .hero-banner {
     padding: 40px 0;
     position: relative;
-    background-image: linear-gradient(to right, #8e2de2, #4a00e0);
+    background-image: linear-gradient(to right, #ffc1fb, rgb(255, 149, 241));
     @include md {
-        height: calc(100vh - 80px);
+        height: calc(90vh - 80px);
     }
     .content {
         height: 100%;
@@ -37,7 +37,7 @@
             }
         }
         .text-content {
-            color: white;
+            color: rgb(0, 0, 0);
             text-align: center;
             display: flex;
             flex-direction: column;
@@ -55,7 +55,7 @@
                 font-size: 80px;
                 font-weight: 700;
                 line-height: 1;
-                color: white;
+                color: rgb(0, 0, 0);
                 margin-bottom: 20px;
                 @include md {
                     font-size: 180px;
@@ -82,12 +82,12 @@
                     font-size: 13px;
                     font-weight: 500;
                     width: fit-content;
-                    border: 2px solid white;
+                    border: 2px solid rgb(0, 0, 0);
                     padding: 10px 20px;
                     transition: all ease 0.3s;
                     cursor: pointer;
                     &.v2 {
-                        background-color: white;
+                        background-color: rgb(255, 149, 241);
                         color: black;
                     }
                     &:hover {
