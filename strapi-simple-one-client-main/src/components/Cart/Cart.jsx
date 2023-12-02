@@ -51,9 +51,6 @@ const Cart = () => {
                     <div className="empty-cart">
                         <BsCartX />
                         <span>No products in the cart.</span>
-                        <button className="return-cta" onClick={() => {}}>
-                            RETURN TO SHOP
-                        </button>
                     </div>
                 )}
 
