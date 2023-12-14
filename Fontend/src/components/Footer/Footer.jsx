@@ -32,8 +32,8 @@ const Footer = () => {
                 <div className="col">
                     <div className="title">Categories</div>
                     <span className="text">TCG Pokemon</span>
-                    <span className="text">TCG Yugioh</span>
-                    <span className="text">TCG Disney</span>
+                    <span className="text">OCG/AE Yugioh</span>
+                    <span className="text">TCG Vanguard</span>
                     <span className="text">Figures</span>
                     <span className="text">Mouse Paddings</span>
                     <span className="text">Keycaps</span>
