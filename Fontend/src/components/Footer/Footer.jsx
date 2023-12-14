@@ -9,7 +9,7 @@ const Footer = () => {
                 <div className="col">
                     <div className="title">About</div>
                     <div className="text">
-                        We are IU-gi-oh Team, one of the biggest yugioh content creator
+                        We are IU-gi-oh Team, one of the biggest yugioh content creator in VietNam
                     </div>
                 </div>
                 <div className="col">
@@ -17,17 +17,16 @@ const Footer = () => {
                     <div className="c-item">
                         <FaLocationArrow />
                         <div className="text">
-                            Kayaloram Rd, Punnamada, Kottankulangara, Alappuzha,
-                            Kerala, 688006
+                            Hồ Chí Minh city
                         </div>
                     </div>
                     <div className="c-item">
                         <FaMobileAlt />
-                        <div className="text">Phone: 0471 272 0261</div>
+                        <div className="text">Phone: 0969696969</div>
                     </div>
                     <div className="c-item">
                         <FaEnvelope />
-                        <div className="text">Email: store@jsdev.com</div>
+                        <div className="text">Email: iugioh.bussiness@gmail.com</div>
                     </div>
                 </div>
                 <div className="col">
@@ -52,8 +51,7 @@ const Footer = () => {
             <div className="bottom-bar">
                 <div className="bottom-bar-content">
                     <span className="text">
-                        JSDEVSTORE 2022 CREATED BY JS DEV. PREMIUM E-COMMERCE
-                        SOLUTIONS.
+                        Create by IUgioh team
                     </span>
                     <img src={Payment} />
                 </div>

@@ -14,9 +14,7 @@ const Banner = () => {
                 <div className="text-content">
                     <h1>Sales</h1>
                     <p>
-                        Convallis interdum purus adipiscing dis parturient
-                        posuere ac a quam a eleifend montes parturient posuere
-                        curae tempor
+                       Ở đây có mọi thứ về yugioh/vanguard cho bạn
                     </p>
                     <div className="ctas">
                         <div className="banner-cta">
